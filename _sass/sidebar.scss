@@ -59,7 +59,7 @@
     pointer-events: none;
     background: $sidebar-colour;
     opacity: 1;
-    animation-duration: .35s;
+    animation-duration: 0s;
     animation-timing-function: ease;
 }
 
@@ -70,7 +70,7 @@
     pointer-events: none;
     background: $sidebar-colour;
     opacity: 1;
-    animation-duration: .35s;
+    animation-duration: 0s;
     animation-timing-function: ease;
 }
 
@@ -95,7 +95,7 @@
         margin-left: 10%;
         margin-right: 10%;
         min-width: 80%;
-        margin: calc(#{$sidebar-height} + 1em) 1em 1em 1em;
+        margin: 1em 1em 1em 1em;
     }
 
     #content-fader {
