@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/flexmasonry/flexmasonry.css">
+    <script src="/assets/flexmasonry/flexmasonry.js"></script>
+    {% seo %}
+  </head>
+  <body>
+    <section class="content">
+      {% include landing.html %}
+      <section class="cover-text"> 
+        {{content}}
+      </section>
+    </section>
+    <script src="/assets/js/post-grid-init.js"></script>
+    {% include lazyload.html %}
+    <script type="text/javascript" src="/assets/lightbox/lightbox.js"></script>
+    <link rel="stylesheet" href="/assets/lightbox/lightbox.css">
+    <script src="/assets/js/sidebar.js"></script>
+    <script src="/assets/js/fade-transitions.js"></script>
+    <script>fadeInPage();</script>
+  </body>
+</html>

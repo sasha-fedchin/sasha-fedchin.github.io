@@ -1,0 +1,65 @@
+@import "constants";
+@import "fonts";
+
+.cover-text {
+    h1 {
+        color: $text-colour-light;
+        margin: 0;
+    }
+    p {
+        max-width: 50%;
+        font-size: 1.5em;
+        color: $text-colour-light;
+        text-align: left;
+        justify-content: center;
+        margin-left: 25%;
+    }
+    ul {
+        max-width: 80%;
+        font-size: 1.5em;
+        color: $text-colour-light;
+        text-align: left;
+        justify-content: center;
+        margin-left: 10%;
+    }
+    a {
+        color: $primary-highlight;
+        :hover {
+            color: lighten($primary-highlight, 24%);
+        }
+    }
+}
+
+.open-button-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cover {
+    width: 100%;
+    display: flex;
+    top: 0;
+    margin-top: 50px;
+    position: relative;
+    z-index: 9999;
+    background: $sidebar-colour;
+    color: $text-colour-light;
+    transition: all .25s ease;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.cover-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.cover-tagline {
+    max-width: 250px;
+    margin: auto;
+    color: $hover-colour;
+}

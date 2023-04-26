@@ -1,0 +1,22 @@
+<section class="cover"> 
+  <div class="cover-text">
+    {% if site.image %}<img class="cover-image" src="{{ site.image }}" />{% endif %}
+    <h1>{{ site.title }}</a></h1>
+    <!--h6>{{ site.description }}</h6>
+    {% if site.tagline %}
+      <div class="cover-tagline">
+        {{ site.tagline }}
+      </div>
+    {% endif %}!-->
+    {% include social-links.html %}
+  </div>
+  <div class="open-button-container">
+      <a href="{{site.url}}" id="open-button-home" class="button-dark">Home</a>
+      <a href="{{site.url}}/papers/" id="open-button-papers" class="button-dark">Papers</a>
+      <a href="{{site.url}}/assets/pdfs/resume.pdf" id="open-button-resume" class="button-dark">Resume</a>
+      <a href="{{site.url}}/graphics/" id="open-button-graphics" class="button-dark">Graphics</a>
+  </div>
+  <!--div class="cover-text">
+    <p>{{ content }}</p>
+  </div!-->
+</section>

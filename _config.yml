@@ -1,0 +1,17 @@
+# Site settings
+title: Sasha Fedchin
+image: /assets/images/profile.jpg
+
+# if you don't have any of social below, comment the line
+instagram: sashafedchin
+linkedin: aleksandr-fedchin
+github: Dargones
+email: aleksandr.fedchin@tufts.edu
+scholar: citations?user=bi4KxZMAAAAJ&hl=en
+resume: true
+
+# Build settings
+theme: arco
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
