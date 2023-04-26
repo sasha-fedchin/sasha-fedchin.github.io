@@ -1,7 +1,7 @@
 @mixin button($background, $highlight) {
     display: inline-block;
     padding: 10px 25px;
-    margin: 0px 10px;
+    margin: 10px 10px;
     border-radius: 5px;
     transition: all .25s ease;
     justify-content: center;
