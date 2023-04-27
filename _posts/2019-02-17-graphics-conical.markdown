@@ -2,9 +2,10 @@
 layout: post
 title: "Conical Intersect"
 date: 2019-02-17 00:00
+excerpt: "A sculptural (or architectural?) collage."
 images: 
-    cover: ../assets/images/posts/Conical-min.jpg
-    top: ../../../assets/images/posts/Conical.jpg
+    cover: /assets/images/posts/Conical-min.jpg
+    top: /assets/images/posts/Conical.jpg
 ---
 A sculptural (or architectural?) collage. Featured are Gordon Matta-Clark’s “Conical Intersect” and Richard Serra’s “Tilted Arc.”
 

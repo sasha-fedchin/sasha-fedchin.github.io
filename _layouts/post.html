@@ -10,8 +10,8 @@ layout: default
   <svg id="content-fader"></svg>
   <div class="post">
     
-    <div class="clickable-image"><a href="{{ page.images.top }}" style="max-width: 80%">
-      <img class="post-image" alt="{{ page.title }} | {{ page.description | truncate: 80 }}" src="{{ page.images.top }}" />
+    <div class="clickable-image"><a href="{{ site.url }}{{ page.images.top }}" style="max-width: 80%">
+      <img class="post-image" alt="{{ page.title }} | {{ page.description | truncate: 80 }}" src="{{ site.url }}{{ page.images.top }}" />
     </a></div>
     <div class="post-title"><h1>{{ page.title }}</h1></div>
     <div class="post-description">{{ page.description }}</div>
