@@ -70,6 +70,10 @@ jobs:
         with:
           name: artartart
           path: _site/
+      - name: Debug Uploaded Artifact
+        run: |
+          echo "Listing uploaded artifacts..."
+          ls -R /home/runner/work/_temp/
 
   # Deployment job
   deploy:
