@@ -61,9 +61,14 @@ jobs:
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Debug2
+        run: |
+          echo "Checking _site directory:"
+          ls -la _site  
       - name: Upload artifact
-        # Update to latest version to fix the error
         uses: actions/upload-pages-artifact@v3
+        with:
+          name: github-pages
 
   # Deployment job
   deploy:
@@ -75,4 +80,6 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v3
+        with:
+          artifact_name: github-pages
