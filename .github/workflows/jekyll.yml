@@ -65,34 +65,16 @@ jobs:
         run: |
           echo "Checking _site directory:"
           ls -la _site  
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: github-pages
-          path: _site/
-      - name: Debug Uploaded Artifact
-        run: |
-          echo "Listing uploaded artifacts..."
-          ls -R /home/runner/work/_temp/
-
-  # Deployment job
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        
   deploy:
+    runs-on: ubuntu-22.04
     needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: List Artifacts
-        run: |
-          echo "Checking available artifacts..."
-          ls -R /home/runner/work/_temp/
-      - name: Check Uploaded Artifacts
-        run: |
-          echo "Listing artifacts available in GitHub Actions:"
-          ls -la /home/runner/work/_temp/
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
-        with:
-          artifact_name: github-pages
