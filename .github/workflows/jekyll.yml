@@ -31,6 +31,8 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: Install Ruby
         run: |
           sudo apt update
@@ -44,10 +46,13 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
+      - name: List Files
+        run: |
+          echo "Current working directory: $(pwd)"
+          ls -la
       - name: Install Dependencies
         run: |
           cd ${{ github.workspace }}
-          ls
           bundle install
 
       - name: Build with Jekyll
