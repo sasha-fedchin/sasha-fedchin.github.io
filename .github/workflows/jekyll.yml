@@ -45,7 +45,10 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
       - name: Install Dependencies
-        run: bundle install
+        run: |
+          cd ${{ github.workspace }}
+          ls
+          bundle install
 
       - name: Build with Jekyll
         run: |
