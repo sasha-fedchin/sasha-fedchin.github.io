@@ -39,8 +39,25 @@
     {% endif %}
 
     {% if site.email %}
-        <a class="link" data-title="{{ site.email }}" href="mailto:{{ site.email }}"  rel="noopener">
-            <img src="{{site.url}}/assets/images/fa/telegram.svg" alt="Email">
-        </a>
-    {% endif %}
+    <!-- placeholder for email link -->
+    <span id="em"></span>
+    <script>
+        const a = "sasha";
+        const b = "fedchin";
+  const user = a + "." + b;
+  const domain = "gmail.com";
+  const addr = `${user}@${domain}`;
+
+  // Create <a> the same way as the others
+  const link = document.createElement("a");
+  link.className = "link";
+  link.href = `mailto:${addr}`;
+  link.setAttribute("rel", "noopener");
+  link.setAttribute("data-title", "Email");
+  link.innerHTML = `<img src="{{ site.url }}/assets/images/fa/telegram.svg" alt="Email">`;
+
+  // Insert into the same container
+  document.currentScript.parentElement.appendChild(link);
+</script>
+  {% endif %}
 </div>
