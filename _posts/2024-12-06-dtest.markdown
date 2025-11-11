@@ -1,0 +1,18 @@
+---
+layout: post
+title: "DTest"
+date: 2024-12-06 00:00
+excerpt: "A toolkit for automated test generation and dead-code detection for the Dafny programming language."
+description: "A toolkit for automated test generation and dead-code detection for the Dafny programming language."
+images: 
+    cover: /assets/images/posts/DTest2.png
+    top: /assets/images/posts/DTest2.png
+---
+**DTest** is an automated test generation toolkit for the Dafny programming language. You can run DTest on your Dafny code and it will automatically produce tests that **guarantee statement or path coverage** (depending on the settings). Under the hood, DTest relies on the Dafny verifier to generate test inputs that reach the requested section of your code. You can also use DTest as a linter to uncover dead code.
+
+<p> GitHub Repo: <a href="https://github.com/dafny-lang/dafny">https://github.com/dafny-lang/dafny</a> (DTest is officially part of Dafny)</p>
+
+<p> Paper (NFM): <a href="https://www.amazon.science/publications/a-toolkit-for-automated-testing-of-dafny">www.amazon.science/publications/a-toolkit-for-automated-testing-of-dafny</a></p>
+
+<p>If you want to learn more about DTest, <a href="https://dafny.org/blog/2023/12/06/automated-test-generation-chess-puzzles-with-dafny/">read the official Dafny blog</a>.</p>
+

@@ -14,10 +14,9 @@ layout: default
       <img class="post-image" alt="{{ page.title }} | {{ page.description | truncate: 80 }}" src="{{ site.url }}{{ page.images.top }}" />
     </a></div>
     <div class="post-title"><h1>{{ page.title }}</h1></div>
-    <div class="post-description">{{ page.description }}</div>
     <div class="post-header">
       <span class="post-date">{{ page.date | date_to_string}}</span>
-      <span class="post-tags">{{ page.tags | join: ", "}} CC BY-NC-SA 3.0</span>
+      <span class="post-tags">{{ page.tags | join: ", "}}</span>
     </div>
 
     <div class="post-content">

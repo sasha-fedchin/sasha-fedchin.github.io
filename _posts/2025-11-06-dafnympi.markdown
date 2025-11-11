@@ -1,0 +1,21 @@
+---
+layout: post
+title: "DafnyMPI"
+date: 2025-11-06 00:00
+excerpt: "A library for writing provably correct message-passing concurrent code in the Dafny programming language."
+description: "A library for writing provably correct message-passing concurrent code in the Dafny programming language."
+images: 
+    cover: /assets/images/posts/DafnyMPI-min.png
+    top: /assets/images/posts/DafnyMPI.png
+---
+**DafnyMPI** is a library for writing provably correct **message-passing concurrent programs** in the Dafny programming language. 
+DafnyMPI **rules out deadlocks** by enforcing an ordering property on message tags and allows reasoning about a program's output, including
+proving functional equivalence between a reference sequential program and an optimized MPI implementation. 
+Because DafnyMPI is a library (rather than a DSL or a language extension), it both inherits all the functionality available to Dafny developers and 
+does not introduce any special-purpose language constructs. Instead, DafnyMPI relies on method preconditions to enforce all the necessary correctness properties.
+
+<p> GitHub Repo: <a href="https://github.com/Dargones/DafnyMPI">https://github.com/Dargones/DafnyMPI</a></p>
+
+<p>DafnyMPI is
+also <a href="https://doi.org/10.5281/zenodo.17102521">available as an artifact</a> for an upcoming POPL 2026 paper (co-authored with Antero Mejr, Jeffrey Foster, and Hari Sundar). We have
+used DafnyMPI to verify correctness or three canonical PDE solvers: Linear Convection, Poisson, and Heat Diffusion.</p>
