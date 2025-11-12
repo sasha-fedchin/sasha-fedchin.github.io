@@ -17,5 +17,5 @@ does not introduce any special-purpose language constructs. Instead, DafnyMPI re
 <p> GitHub Repo: <a href="https://github.com/Dargones/DafnyMPI">https://github.com/Dargones/DafnyMPI</a></p>
 
 <p>DafnyMPI is
-also <a href="https://doi.org/10.5281/zenodo.17102521">available as an artifact</a> for an upcoming POPL 2026 paper (co-authored with Antero Mejr, Jeffrey Foster, and Hari Sundar). We have
+also <a href="https://doi.org/10.5281/zenodo.17102521">available as an artifact</a> for an upcoming POPL 2026 paper <a href="https://github.com/Dargones/DafnyMPI/blob/main/paper.pdf">[preprint]</a>. We have
 used DafnyMPI to verify correctness or three canonical PDE solvers: Linear Convection, Poisson, and Heat Diffusion.</p>
